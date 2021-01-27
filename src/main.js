@@ -4,7 +4,10 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import "lib-flexible";
+import Vant from 'vant';
+import 'vant/lib/index.css';
 
+Vue.use(Vant);
 Vue.config.productionTip = false
 
 new Vue({
