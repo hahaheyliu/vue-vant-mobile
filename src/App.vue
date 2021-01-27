@@ -1,5 +1,5 @@
 <template>
-  <div id="app">66666</div>
+  <div id="app"></div>
 </template>
 
 <style lang="scss">

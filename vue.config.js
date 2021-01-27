@@ -6,5 +6,18 @@ module.exports = {
       preProcessor: 'scss',
       patterns: [path.resolve(__dirname, 'src/assets/variables.scss')]
     }
+  },
+  //配置px2rem插件 postcss-plugin-px2rem lib-flexible
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          require("postcss-plugin-px2rem")({
+            rootValue: 37.5,
+            exclude: /node_module/,
+          })
+        ]
+      }
+    }
   }
 }
