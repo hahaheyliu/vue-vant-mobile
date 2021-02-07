@@ -13,7 +13,7 @@ module.exports = {
       postcss: {
         plugins: [
           require("postcss-plugin-px2rem")({
-            rootValue: 37.5,
+            rootValue: 37.5, // 表示设计稿大小是375，因为vant库中也是375
             exclude: /node_module/,
           })
         ]
