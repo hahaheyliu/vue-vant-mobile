@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="loading-wrapper">
     <van-loading type="spinner" />
   </div>
 </template>
@@ -8,5 +8,12 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss" scoped>
+.loading-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

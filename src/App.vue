@@ -15,7 +15,11 @@
   padding: 0;
 }
 #app {
-  color: $color;
-  background-color: $bgcolor;
+  .van-dropdown-menu__bar {
+    background: $bgcolor;
+    .van-dropdown-menu__title {
+      color: $color;
+    }
+  }
 }
 </style>

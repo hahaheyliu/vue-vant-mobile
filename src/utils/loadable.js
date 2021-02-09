@@ -1,9 +1,9 @@
-import Loading from '@/components/Loading/index.vue';
+import loading from '@/components/loading/index.vue';
 
 const loadable = (asyncFUnction) => {
     const component = () => ({
         component: asyncFUnction(),
-        loading: Loading,
+        loading,
     });
     return {
         render(h) {
